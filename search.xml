@@ -8,6 +8,18 @@
 <h3 id="·border"><a href="#·border" class="headerlink" title="·border"></a>·border</h3><p><img src="/2022/10/07/CSS%E5%AD%A6%E4%B9%A0/border%E5%B1%9E%E6%80%A7.png" alt="border"></p>
 <p><img src="/2022/10/07/CSS%E5%AD%A6%E4%B9%A0/border.png" alt="border"></p>
 <p><img src="/2022/10/07/CSS%E5%AD%A6%E4%B9%A0/border%E5%8D%95%E6%96%B9%E5%90%91%E8%AE%BE%E7%BD%AE.png" alt="border"></p>
+<h3 id="·内边距（padding）"><a href="#·内边距（padding）" class="headerlink" title="·内边距（padding）"></a>·内边距（padding）</h3><p><img src="/2022/10/07/CSS%E5%AD%A6%E4%B9%A0/padding.jpg" alt="padding"></p>
+<p><img src="/2022/10/07/CSS%E5%AD%A6%E4%B9%A0/padding-d.jpg" alt="padding"></p>
+<h4 id="ps-在设置内边距的同时会撑大盒子的大小，如果不想盒子变大，并且不想手动调试，可加box-sizing-border-box-这一行代码，会自动调试。"><a href="#ps-在设置内边距的同时会撑大盒子的大小，如果不想盒子变大，并且不想手动调试，可加box-sizing-border-box-这一行代码，会自动调试。" class="headerlink" title="ps:在设置内边距的同时会撑大盒子的大小，如果不想盒子变大，并且不想手动调试，可加box-sizing:border-box;这一行代码，会自动调试。"></a>ps:在设置内边距的同时会撑大盒子的大小，如果不想盒子变大，并且不想手动调试，可加<font color="red">box-sizing:border-box;</font>这一行代码，会自动调试。</h4><h3 id="·外边距（margin"><a href="#·外边距（margin" class="headerlink" title="·外边距（margin)"></a>·外边距（margin)</h3><p><img src="/2022/10/07/CSS%E5%AD%A6%E4%B9%A0/margin1.png" alt="margin"></p>
+<p>这样写<font color="red">margin: 0 auto;</font>可设置为版心居中。</p>
+<p><img src="/2022/10/07/CSS%E5%AD%A6%E4%B9%A0/margin2.png" alt="margin"></p>
+<p><img src="/2022/10/07/CSS%E5%AD%A6%E4%B9%A0/margin3.png" alt="margin"></p>
+<h3 id="·清除默认内外边距"><a href="#·清除默认内外边距" class="headerlink" title="·清除默认内外边距"></a>·清除默认内外边距</h3><p><img src="/2022/10/07/CSS%E5%AD%A6%E4%B9%A0/zonghe.png" alt="margin"></p>
+<h3 id="·外边距特殊现象"><a href="#·外边距特殊现象" class="headerlink" title="·外边距特殊现象"></a>·外边距特殊现象</h3><p><img src="/2022/10/07/CSS%E5%AD%A6%E4%B9%A0/mar1.png" alt="mar"></p>
+<p><img src="/2022/10/07/CSS%E5%AD%A6%E4%B9%A0/mar2.png" alt="mar"></p>
+<p><img src="/2022/10/07/CSS%E5%AD%A6%E4%B9%A0/mar3.png" alt="mar"></p>
+<h5 id="ps-最好使用第二个方法-给父元素设置overflow-hidden-第三种方法会改变嵌套的环境变成行内块的形式"><a href="#ps-最好使用第二个方法-给父元素设置overflow-hidden-第三种方法会改变嵌套的环境变成行内块的形式" class="headerlink" title="ps:最好使用第二个方法,给父元素设置overflow:hidden,第三种方法会改变嵌套的环境变成行内块的形式"></a>ps:最好使用第二个方法,给父元素设置<font color="red">overflow:hidden</font>,第三种方法会改变嵌套的环境变成行内块的形式</h5><h3 id="·行内元素的margin和padding情况"><a href="#·行内元素的margin和padding情况" class="headerlink" title="·行内元素的margin和padding情况"></a>·行内元素的margin和padding情况</h3><p><img src="/2022/10/07/CSS%E5%AD%A6%E4%B9%A0/hang.png" alt="mar"></p>
+<p>ps:如果想要改变垂直方向，<font color="red">使用line-height(行高)就可以</font></p>
 ]]></content>
   </entry>
 </search>
