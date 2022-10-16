@@ -20,6 +20,40 @@
 <p><img src="/2022/10/07/CSS%E5%AD%A6%E4%B9%A0/mar3.png" alt="mar"></p>
 <h5 id="ps-最好使用第二个方法-给父元素设置overflow-hidden-第三种方法会改变嵌套的环境变成行内块的形式"><a href="#ps-最好使用第二个方法-给父元素设置overflow-hidden-第三种方法会改变嵌套的环境变成行内块的形式" class="headerlink" title="ps:最好使用第二个方法,给父元素设置overflow:hidden,第三种方法会改变嵌套的环境变成行内块的形式"></a>ps:最好使用第二个方法,给父元素设置<font color="red">overflow:hidden</font>,第三种方法会改变嵌套的环境变成行内块的形式</h5><h3 id="·行内元素的margin和padding情况"><a href="#·行内元素的margin和padding情况" class="headerlink" title="·行内元素的margin和padding情况"></a>·行内元素的margin和padding情况</h3><p><img src="/2022/10/07/CSS%E5%AD%A6%E4%B9%A0/hang.png" alt="mar"></p>
 <p>ps:如果想要改变垂直方向，<font color="red">使用line-height(行高)就可以</font></p>
+<h1 id="二、CSS浮动"><a href="#二、CSS浮动" class="headerlink" title="二、CSS浮动"></a>二、CSS浮动</h1><h2 id="一、结构伪类选择器"><a href="#一、结构伪类选择器" class="headerlink" title="一、结构伪类选择器"></a>一、结构伪类选择器</h2><h3 id="1-基本用法"><a href="#1-基本用法" class="headerlink" title="1.基本用法"></a>1.基本用法</h3><p><img src="/2022/10/07/CSS%E5%AD%A6%E4%B9%A0/wl%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95.png"></p>
+<p><strong>注意：这里E是元素的标签，有很多行E,比如</strong></p>
+<p><code>&lt;li&gt; demo1&lt;/li&gt;</code></p>
+<p><code>&lt;li&gt; demo2&lt;/li&gt;</code></p>
+<p><code>&lt;li&gt; demo3&lt;/li&gt;</code></p>
+<p><code>&lt;li&gt; demo4&lt;/li&gt;</code></p>
+<p><strong>使用li:nth-child(3){},就是选中了第三行这个元素，这样就避免创建类来区别不同的元素</strong></p>
+<h3 id="2-公式"><a href="#2-公式" class="headerlink" title="2.公式"></a>2.公式</h3><p><img src="/2022/10/07/CSS%E5%AD%A6%E4%B9%A0/wl%E5%85%AC%E5%BC%8F.png"></p>
+<h2 id="二、伪元素"><a href="#二、伪元素" class="headerlink" title="二、伪元素"></a>二、伪元素</h2><p><img src="/2022/10/07/CSS%E5%AD%A6%E4%B9%A0/wei.png"></p>
+<p>eg: </p>
+<p><code>&lt;div class=&#39;fa&#39;&gt;my name is&lt;/div&gt;</code></p>
+<p>然后在style中加入</p>
+<p><code>.fa::after&#123;</code></p>
+<p><code> content: catxiao</code> </p>
+<p><code>&#125;</code></p>
+<p>最后结果就会显示为<strong>my name is catxiao</strong></p>
+<p>注意必须要设置content，并且默认是行内元素，可以改成行内块或块以及其他类型的元素，也可以自己设置背景大小等操作。</p>
+<h2 id="三、标准流-标准流排版规则"><a href="#三、标准流-标准流排版规则" class="headerlink" title="三、标准流(         标准流排版规则        )"></a>三、标准流(         <font color="blue">标准流排版规则</font>        )</h2><p><img src="/2022/10/07/CSS%E5%AD%A6%E4%B9%A0/standard.png"></p>
+<h2 id="四、浮动"><a href="#四、浮动" class="headerlink" title="四、浮动"></a>四、浮动</h2><h3 id="1-代码"><a href="#1-代码" class="headerlink" title="1.代码"></a>1.代码</h3><p><img src="/2022/10/07/CSS%E5%AD%A6%E4%B9%A0/float_dai.png"></p>
+<h3 id="2-特点"><a href="#2-特点" class="headerlink" title="2.特点"></a>2.特点</h3><p><img src="/2022/10/07/CSS%E5%AD%A6%E4%B9%A0/float_te.png"></p>
+<p><strong><font color="pink">ps</font>:有了浮动，就<font color="skyblue">不能考虑水平居中</font>，其一般不是左对齐就是右对齐，浮动的优先级比较高，浮动不在标准流中，可以覆盖标准流中的标签元素，但是<font color="skyblue">标签元素中的文字不能覆盖</font></strong></p>
+<h2 id="五、清除浮动（清除浮动给别人带来的影响）"><a href="#五、清除浮动（清除浮动给别人带来的影响）" class="headerlink" title="五、清除浮动（清除浮动给别人带来的影响）"></a>五、清除浮动（清除浮动给别人带来的影响）</h2><p>出现这种影响的条件是：</p>
+<p>父元素中子元素标签浮动，但是父元素没有高度，就会使标准流中元素往前顶，但是很多时候，不方便设置父元素高度。以下是解决方法，</p>
+<p><img src="/2022/10/07/CSS%E5%AD%A6%E4%B9%A0/clear1.png"></p>
+<p>第二种方法是在父元素的最后额外加入一个块级标签，并且标签中css代码中加上<font color="red">clear:both</font>,第五种方法最方便，项目中常用第三和第四种方法。</p>
+<h1 id="css书写顺序："><a href="#css书写顺序：" class="headerlink" title="css书写顺序："></a>css书写顺序：</h1><p><font color="#ffa500"><strong>1.浮动/display</strong></font></p>
+<p><font color="#ffa500"><strong>2.盒子模型 margin border padding 宽度高度背景颜色</strong></font></p>
+<p><font color="#ffa500"><strong>3.文字样式</strong></font></p>
+<p>这样写不仅更好阅读，并且浏览器执行效率更高！</p>
+<p><strong><font color="red">ps:在写代码的时候有些标签默认有外边距或者内边距，如果想要获得自己想要的形式，可以先清楚所有的默认内外边距。</font></strong></p>
+<p><code>*&#123;</code></p>
+<p><code>margin: 0;</code></p>
+<p><code>padding:0: 0;</code></p>
+<p><code>&#125;</code>使用此代码</p>
 ]]></content>
   </entry>
 </search>
