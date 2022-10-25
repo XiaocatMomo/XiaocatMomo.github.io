@@ -45,7 +45,28 @@
 <p>父元素中子元素标签浮动，但是父元素没有高度，就会使标准流中元素往前顶，但是很多时候，不方便设置父元素高度。以下是解决方法，</p>
 <p><img src="/2022/10/07/CSS%E5%AD%A6%E4%B9%A0/clear1.png"></p>
 <p>第二种方法是在父元素的最后额外加入一个块级标签，并且标签中css代码中加上<font color="red">clear:both</font>,第五种方法最方便，项目中常用第三和第四种方法。</p>
-<h1 id="css书写顺序："><a href="#css书写顺序：" class="headerlink" title="css书写顺序："></a>css书写顺序：</h1><p><font color="#ffa500"><strong>1.浮动/display</strong></font></p>
+<h1 id="三、CSS定位装饰"><a href="#三、CSS定位装饰" class="headerlink" title="三、CSS定位装饰"></a>三、CSS定位装饰</h1><h2 id="一、定位"><a href="#一、定位" class="headerlink" title="一、定位"></a>一、定位</h2><h3 id="1、定位的基本步骤"><a href="#1、定位的基本步骤" class="headerlink" title="1、定位的基本步骤"></a>1、定位的基本步骤</h3><p><img src="/2022/10/07/CSS%E5%AD%A6%E4%B9%A0/dw_1.png"></p>
+<h3 id="2、相对定位"><a href="#2、相对定位" class="headerlink" title="2、相对定位"></a>2、相对定位</h3><p><img src="/2022/10/07/CSS%E5%AD%A6%E4%B9%A0/dw_2.png"></p>
+<p><font color="red"><strong>ps:</strong></font><strong>1.其是相较于自己原来的位置进行移动，并且原有位置被自己占用（不脱标），其他标签不会到那个位置，其保持原有标签的特点</strong></p>
+<p>​      <strong>2.使用场景一般是子标签使用绝对定位，父标签使用相对定位</strong></p>
+<p>​      <strong>3.在设置偏移量时，如果left和right同时存在，则会以<font color="red">left</font>为准；top和bottom同时存在，则以<font color="red">top</font>为准。</strong></p>
+<h3 id="3、绝对定位"><a href="#3、绝对定位" class="headerlink" title="3、绝对定位"></a>3、绝对定位</h3><p><img src="/2022/10/07/CSS%E5%AD%A6%E4%B9%A0/de_3.png"></p>
+<p><strong>特点：1、绝对定位的盒子具备行内块的特点，加高加宽生效，如果宽为0，则盒子不显示。</strong></p>
+<p>​            <strong>2、如果子级可以通过设置百分比来定义宽度和高度，百分比的基数是父级的宽和高</strong></p>
+<p><strong>代码示例：</strong></p>
+<p><img src="/2022/10/07/CSS%E5%AD%A6%E4%B9%A0/dw_3.png"></p>
+<p>由于绝对定位的盒子<font color="red"><strong>不能使用margin auto来左右居中</strong></font>，故只有对盒子进行偏移来达到居中的效果。其中的<code>transform：translate(-50%,-50%);</code>是将盒子移动自己宽高的一半，第一个是宽，第二个是高。<strong>（负数是向左和向上，正数是向右和向下）</strong></p>
+<h3 id="4、固定定位"><a href="#4、固定定位" class="headerlink" title="4、固定定位"></a>4、固定定位</h3><p><img src="/2022/10/07/CSS%E5%AD%A6%E4%B9%A0/dw_5.png"></p>
+<p><strong>补充特点：</strong></p>
+<p><strong>1、固定定位具有行内块的特点</strong></p>
+<p><strong>2、默认情况下，定位的盒子，后来者居上</strong></p>
+<p><strong>3、可通过设置<font color="brown">z-index</font>属性来控制固定位置的盒子覆盖问题，<font color="brown">z-index</font>的整数值越大，显示顺序越靠上，其默认值是0。<font color="red">（z-index需要配合定位使用）</font></strong></p>
+<h2 id="二、装饰"><a href="#二、装饰" class="headerlink" title="二、装饰"></a>二、装饰</h2><h3 id="1、垂直对齐方式"><a href="#1、垂直对齐方式" class="headerlink" title="1、垂直对齐方式"></a>1、垂直对齐方式</h3><p><img src="/2022/10/07/CSS%E5%AD%A6%E4%B9%A0/dc_1.png"></p>
+<p><img src="/2022/10/07/CSS%E5%AD%A6%E4%B9%A0/dc_2.png"></p>
+<p><strong>ps:</strong></p>
+<p><strong>1、浏览器遇到行内或者行内块标签会当做文字处理，文字默认是按基线对齐，这就会导致两个盒子之间会无法完全对齐。所以既可以通过以上方式来实现对齐，也可以使用<code>display:block</code>来使其默认为文字改变为块级标签来进行部分对齐</strong></p>
+<p><strong>2、如果想让图片在父级中垂直居中，先要给父级设置行高<code>line-height</code></strong></p>
+<h1 id="css基本概念："><a href="#css基本概念：" class="headerlink" title="css基本概念："></a>css基本概念：</h1><h2 id="一、代码书写顺序"><a href="#一、代码书写顺序" class="headerlink" title="一、代码书写顺序"></a>一、代码书写顺序</h2><p><font color="#ffa500"><strong>1.浮动/display</strong></font></p>
 <p><font color="#ffa500"><strong>2.盒子模型 margin border padding 宽度高度背景颜色</strong></font></p>
 <p><font color="#ffa500"><strong>3.文字样式</strong></font></p>
 <p>这样写不仅更好阅读，并且浏览器执行效率更高！</p>
@@ -54,6 +75,11 @@
 <p><code>margin: 0;</code></p>
 <p><code>padding:0: 0;</code></p>
 <p><code>&#125;</code>使用此代码</p>
+<h2 id="二、网页布局方式"><a href="#二、网页布局方式" class="headerlink" title="二、网页布局方式"></a>二、网页布局方式</h2><h3 id="1-标准流"><a href="#1-标准流" class="headerlink" title="1.标准流"></a>1.标准流</h3><p>1.块级元素独占一行  -&gt; 垂直布局</p>
+<p>2.行内元素/行内块元素一行显示多个 -&gt; 水平布局</p>
+<h3 id="2-浮动"><a href="#2-浮动" class="headerlink" title="2.浮动"></a>2.浮动</h3><p>1.可以让原本垂直布局的<font color="red"><strong>块级元素变成水平布局</strong></font></p>
+<h3 id="3-定位"><a href="#3-定位" class="headerlink" title="3.定位"></a>3.定位</h3><p>1.可以让元素自由的摆放在网页的任意位置</p>
+<p>2.一般<font color="red"><strong>用于盒子之间的层叠情况</strong></font></p>
 ]]></content>
   </entry>
 </search>
