@@ -82,4 +82,33 @@
 <p>2.一般<font color="red"><strong>用于盒子之间的层叠情况</strong></font></p>
 ]]></content>
   </entry>
+  <entry>
+    <title>JavaWeb学习</title>
+    <url>/2022/11/03/JavaWeb%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<h1 id="一、JDBC"><a href="#一、JDBC" class="headerlink" title="一、JDBC"></a>一、JDBC</h1><img src="/2022/11/03/JavaWeb%E5%AD%A6%E4%B9%A0/1.png" style="zoom:70%;">
+
+<p>大致流程：注册驱动-&gt;连接数据库-&gt;定义SQL语句-&gt;获取执行SQL的对象-&gt;执行SQL</p>
+<h2 id="API详解："><a href="#API详解：" class="headerlink" title="API详解："></a>API详解：</h2><h2 id="1、DriverManager"><a href="#1、DriverManager" class="headerlink" title="1、DriverManager"></a>1、DriverManager</h2><img src="/2022/11/03/JavaWeb%E5%AD%A6%E4%B9%A0/d1.png" style="zoom:70%;">
+
+
+
+<h2 id="2、Connection"><a href="#2、Connection" class="headerlink" title="2、Connection"></a>2、Connection</h2><img src="/2022/11/03/JavaWeb%E5%AD%A6%E4%B9%A0/c1.png" style="zoom:70%;">
+
+<img src="/2022/11/03/JavaWeb%E5%AD%A6%E4%B9%A0/c2.png" style="zoom:70%;">
+
+<h2 id="3、Statement"><a href="#3、Statement" class="headerlink" title="3、Statement"></a>3、Statement</h2><img src="/2022/11/03/JavaWeb%E5%AD%A6%E4%B9%A0/s1.png" style="zoom:70%;">
+
+<h2 id="4、ResultSet"><a href="#4、ResultSet" class="headerlink" title="4、ResultSet"></a>4、ResultSet</h2><img src="/2022/11/03/JavaWeb%E5%AD%A6%E4%B9%A0/r1.png" style="zoom:70%;">
+
+
+
+<h2 id="5、PreparedStatement"><a href="#5、PreparedStatement" class="headerlink" title="5、PreparedStatement"></a>5、PreparedStatement</h2><img src="/2022/11/03/JavaWeb%E5%AD%A6%E4%B9%A0/p1.png" style="zoom:70%;">
+
+<img src="/2022/11/03/JavaWeb%E5%AD%A6%E4%B9%A0/p2.png" style="zoom:70%;">
+
+<img src="/2022/11/03/JavaWeb%E5%AD%A6%E4%B9%A0/p3.png" style="zoom:70%;">
+
+<p>其中的敏感字符示例：’ or ‘1’ = ‘1</p>
+]]></content>
+  </entry>
 </search>
